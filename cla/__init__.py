@@ -47,3 +47,7 @@ from .gauss_quadrature import *
 from . import simpson_method
 __all__.extend(simpson_method.__all__)
 from .simpson_method import *
+
+from . import numerical_differentiation
+__all__.extend(numerical_differentiation.__all__)
+from .numerical_differentiation import *
