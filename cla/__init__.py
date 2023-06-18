@@ -39,3 +39,15 @@ from .jacobi import *
 from . import eigen
 __all__.extend(eigen.__all__)
 from .eigen import *
+
+from . import gauss_quadrature
+__all__.extend(gauss_quadrature.__all__)
+from .gauss_quadrature import *
+
+from . import simpson_method
+__all__.extend(simpson_method.__all__)
+from .simpson_method import *
+
+from . import numerical_differentiation
+__all__.extend(numerical_differentiation.__all__)
+from .numerical_differentiation import *
