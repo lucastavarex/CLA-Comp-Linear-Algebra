@@ -9,7 +9,7 @@ class Task2:
         print("║                                          ║")
         print("║          P2 - Lista 5 - Task 2           ║")
         print("║                                          ║")
-        print("║ Student1: Thiago Dias   | DRE: XXXXXXXXX ║")
+        print("║ Student1: Thiago Dias   | DRE: 119019790 ║")
         print("║ Student2: Lucas Tavares | DRE: 120152739 ║")
         print("║                                          ║")
         print("║                   2023.1                 ║")
