@@ -9,7 +9,7 @@ class Task1:
         print("║                                          ║")
         print("║          P2 - Lista 5 - Task 1           ║")
         print("║                                          ║")
-        print("║ Student1: Thiago Dias   | DRE: 119019790 ║")
+        print("║ Student1: Thiago Costa  | DRE: 119019790 ║")
         print("║ Student2: Lucas Tavares | DRE: 120152739 ║")
         print("║                                          ║")
         print("║                   2023.1                 ║")
@@ -46,7 +46,7 @@ class Task1:
 
         def m2(x):
             return x**2 * S_sigma(x)
-
+        
         simpson_results = adaptive_simpson_method(m0, 0, 10)["results"]
         print("\tFunção m0 - Regra de Simpson: ", simpson_results[-1])
 
