@@ -51,3 +51,7 @@ from .simpson_method import *
 from . import numerical_differentiation
 __all__.extend(numerical_differentiation.__all__)
 from .numerical_differentiation import *
+
+from . import ode
+__all__.extend(ode.__all__)
+from .ode import *

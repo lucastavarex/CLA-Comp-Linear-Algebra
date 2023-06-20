@@ -1,4 +1,4 @@
-import alc
+import cla
 from math import sin, cos
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -7,7 +7,7 @@ def function(t, y, z):
   return -z/5 -y + 2 * sin(t/2) + sin(t) + cos(3*t/2)
 
 for delta in [10, 5, 1, 0.5, 0.1, 0.05, 0.01]:                       #methods: 'taylor_series','runge_kutta_nystron'
-  ts, xs = alc.solve_second_order_ode(function, 0, 100, delta, 0, 0, method='taylor_series')
+  ts, xs = cla.solve_second_order_ode(function, 0, 100, delta, 0, 0, method='taylor_series')
 
   sns.set_style('whitegrid')
   plt.rcParams['font.family'] = 'serif'
@@ -25,7 +25,7 @@ for delta in [10, 5, 1, 0.5, 0.1, 0.05, 0.01]:                       #methods: '
 
   plt.show()
 
-  ts, xs = alc.solve_second_order_ode(function, 0, 100, delta, 0, 0, method='runge_kutta_nystron')
+  ts, xs = cla.solve_second_order_ode(function, 0, 100, delta, 0, 0, method='runge_kutta_nystron')
 
   sns.set_style('whitegrid')
   plt.rcParams['font.family'] = 'serif'

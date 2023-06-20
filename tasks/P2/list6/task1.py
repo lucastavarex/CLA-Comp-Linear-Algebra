@@ -1,9 +1,9 @@
-import alc
+import cla
 
 def function (t, y):
   return -2*t*(y**2)
                                                             #methods: 'euler','runge_kutta_second_order', 'runge_kutta_fourth_order'
-ts, xs = alc.solve_first_order_ode(function, 0, 10, 0.1, 1, method='runge_kutta_fourth_order')
+ts, xs = cla.solve_first_order_ode(function, 0, 10, 0.1, 1, method='runge_kutta_fourth_order')
 print("╔═════════════════════════════════╗")
 print("║ t_values              x_values  ║ ")
 print("╠═════════════════════════════════╣")

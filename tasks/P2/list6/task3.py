@@ -1,4 +1,4 @@
-import alc
+import cla
 from math import sqrt
 import matplotlib.pyplot as plt
 import seaborn as sns
@@ -7,7 +7,7 @@ def function (t, y, z):
   gravity = 9.81 #S.I
   return - gravity - z * sqrt(z ** 2)
 
-ts, xs = alc.solve_second_order_ode(function, 0, 20, 0.1, 0, 0, method='taylor_series')
+ts, xs = cla.solve_second_order_ode(function, 0, 20, 0.1, 0, 0, method='taylor_series')
 sns.set_style('whitegrid')
 plt.rcParams['font.family'] = 'serif'
 plt.rcParams['font.size'] = 12
@@ -20,7 +20,7 @@ ax.tick_params(axis='both', which='major', labelsize=12)
 ax.grid(True, linestyle='--', linewidth=0.5)
 plt.show()
 
-ts, xs = alc.solve_second_order_ode(function, 0, 20, 0.1, 0, 0, method='runge_kutta_nystron')
+ts, xs = cla.solve_second_order_ode(function, 0, 20, 0.1, 0, 0, method='runge_kutta_nystron')
 sns.set_style('whitegrid')
 plt.rcParams['font.family'] = 'serif'
 plt.rcParams['font.size'] = 12
